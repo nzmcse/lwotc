@@ -718,7 +718,8 @@ static function X2AbilityTemplate AddCommandAbility()
 	Template.AbilityShooterConditions.AddItem(SuppressedCondition);
 
 	Template.AbilityTriggers.AddItem(default.PlayerInputTrigger);
-	Template.AbilityTargetConditions.AddItem(default.GameplayVisibilityCondition);
+	// 修改：注释此行以关闭军官技能的视线限制
+	// Template.AbilityTargetConditions.AddItem(default.GameplayVisibilityCondition);
 
 	UnitPropertyCondition = new class'X2Condition_UnitProperty';
     UnitPropertyCondition.ExcludeDead = true;

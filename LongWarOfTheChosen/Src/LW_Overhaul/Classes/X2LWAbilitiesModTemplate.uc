@@ -543,7 +543,8 @@ static function UpdateTeamwork(X2AbilityTemplate Template)
 	TargetVisibilityCondition = new class'X2Condition_Visibility';
 	TargetVisibilityCondition.bRequireGameplayVisible = true;
 	TargetVisibilityCondition.bRequireBasicVisibility=true;
-	Template.AbilityTargetConditions.AddItem(TargetVisibilityCondition);
+	// 修改：注释此行以关闭羁绊技能的视线限制
+	// Template.AbilityTargetConditions.AddItem(TargetVisibilityCondition);
 }
 
 // Make sure that the bondmate "Solace" effect clears the stunned
